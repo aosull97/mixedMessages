@@ -1,5 +1,5 @@
 
-const goodMessage = ['An exciting opportunity lies ahead of you', 'A weight will be taken off your mind', 'All your hard work will soon pay off', 'Happy news is on its way'];
+  const goodMessage = ['An exciting opportunity lies ahead of you', 'A weight will be taken off your mind', 'All your hard work will soon pay off', 'Happy news is on its way'];
 
   const beAwareMessage = ['You will be hungry again in an hour', 'A piece of clothing will be lost in the wash', 'A challenge lays ahead', 'Someone will dissapoint you'];
 
@@ -9,11 +9,7 @@ const goodMessage = ['An exciting opportunity lies ahead of you', 'A weight will
     let randomGood = goodMessage[Math.floor(Math.random()*goodMessage.length)]
     let randomBeAware = beAwareMessage[Math.floor(Math.random()*beAwareMessage.length)]
     let randomGeneral = generalMessage[Math.floor(Math.random()*generalMessage.length)]
-    console.log("You're good fortune is: " + randomGood)
-    console.log("Something to be aware of: " + randomBeAware)
-    console.log("A message just for you: " + randomGeneral)
+    return ("You're good fortune is: " + randomGood + "\nSomething to be aware of: " + randomBeAware + "\nA message just for you: " + randomGeneral)
   };
-    
 
-
-
+  console.log(randomMessage());
